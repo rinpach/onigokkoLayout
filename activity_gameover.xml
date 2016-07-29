@@ -13,38 +13,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="確保m9(^Д^)ﾌﾟｷﾞｬｰ"
+        android:text="@string/capture"
+        android:textSize="100dp"
         android:id="@+id/textview20"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp" />
+        android:layout_marginTop="109dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="逃走時間"
+        android:text="@string/esctime"
         android:id="@+id/textView21"
-        android:layout_marginTop="37dp"
-        android:layout_below="@+id/textview20"
-        android:layout_toLeftOf="@+id/textView22"
-        android:layout_toStartOf="@+id/textView22" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/textView22"
-        android:layout_below="@+id/textView21"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ゲーム終了"
+        android:text="@string/endGame"
         android:id="@+id/button9"
+        android:layout_marginBottom="53dp"
         android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView21"
+        android:layout_alignStart="@+id/textView21" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format="@string/chronometer_format"
+        android:id="@+id/chronometer2"
+        android:textSize="40dp"
+        android:layout_above="@+id/button9"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="118dp" />
+        android:layout_marginBottom="66dp" />
 </RelativeLayout>

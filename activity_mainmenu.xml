@@ -14,27 +14,35 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Select Menu"
-        android:id="@+id/textView"
-        android:layout_marginBottom="45dp"
-        android:layout_above="@+id/button"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/SelectManu"
+        android:layout_above="@+id/startsignupB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ゲーム設定"
-        android:id="@+id/button"
-        android:layout_marginBottom="109dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/gamestting"
+        android:layout_above="@+id/gamestart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ゲーム開始"
-        android:id="@+id/button2"
-        android:layout_alignTop="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_marginTop="82dp" />
+        android:id="@+id/gamestart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/gamestting"
+        android:layout_alignStart="@+id/gamestting" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="サインアップ"
+        android:id="@+id/startsignupB"
+        android:layout_above="@+id/gamestting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp" />
 </RelativeLayout>
